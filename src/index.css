@@ -1,0 +1,62 @@
+@import "tailwindcss";
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme {
+  --font-display: "Plus Jakarta Sans", system-ui, -apple-system, sans-serif;
+  --font-sans: "DM Sans", system-ui, -apple-system, sans-serif;
+  --font-mono: "JetBrains Mono", ui-monospace, SFMono-Regular, monospace;
+
+  --color-studio-canvas: #0b0e14;
+  --color-studio-surface: #121721;
+  --color-studio-elevated: #1a2130;
+  --color-studio-hover: #212a3d;
+  --color-studio-border: #232c3d;
+  --color-studio-border-strong: #323f57;
+  --color-studio-accent: #e5a032;
+  --color-studio-accent-hover: #f0b14b;
+  --color-studio-text: #f1f5f9;
+  --color-studio-muted: #94a3b8;
+  --color-studio-dim: #64748b;
+}
+
+@layer base {
+  html,
+  body {
+    font-family: var(--font-sans);
+    background-color: #0b0e14;
+    color: #f1f5f9;
+    letter-spacing: 0.008em;
+  }
+
+  h1,
+  h2,
+  h3,
+  h4 {
+    font-family: var(--font-display);
+    text-wrap: balance;
+  }
+}
+
+.tabular-nums {
+  font-variant-numeric: tabular-nums;
+}
+
+/* Custom slim studio scrollbars */
+::-webkit-scrollbar {
+  width: 7px;
+  height: 7px;
+}
+::-webkit-scrollbar-track {
+  background: #0b0e14;
+}
+::-webkit-scrollbar-thumb {
+  background: #232c3d;
+  border-radius: 3px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #35435e;
+}
+
+input[type="range"] {
+  accent-color: #e5a032;
+}

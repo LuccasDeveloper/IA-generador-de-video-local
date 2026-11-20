@@ -1,0 +1,1380 @@
+{
+  "schemaVersion": "1.0.0",
+  "id": "proj_mwp8igo0",
+  "title": "A Porta do Andar de Cima",
+  "prompt": "Título: A Porta do Andar de Cima\nShort de terror psicológico 2D com 30 segundos, formato vertical 9:16, sem narração, com efeitos sonoros cinematográficos.\n1. 0–5s: Daniel entra sozinho no saguão escuro de uma casa abandonada sob a chuva com sua lanterna.\n2. 5–10s: Ele para ao ouvir passos lentos ecoarem no andar de cima.\n3. 10–15s: Ele avança pelo corredor superior e encontra uma porta entreaberta.\n4. 15–21s: Enquanto observa a porta, uma silhueta aparece ao fundo do corredor.\n5. 21–26s: Ele se vira assustado quando a sombra avança em sua direção pelo corredor.\n6. 26–30s: A luz se apaga enquanto a sombra domina o corredor e a tela corta para preto.",
+  "genre": "horror",
+  "themeSummary": "Suspense cinematográfico 2D com iluminação direcional controlada, prenúncio progressivo e fidelidade ao roteiro.",
+  "totalDuration": 30,
+  "engineUsed": "offline_rules",
+  "performanceProfile": "equilibrado",
+  "format": {
+    "aspectRatio": "16:9",
+    "previewResolution": "540p",
+    "exportResolution": "1080p",
+    "fps": 24,
+    "renderer": "ffmpeg_mp4"
+  },
+  "visualIdentity": {
+    "mood": "Suspense gótico nítido com contraste equilibrado e sombras direcionais",
+    "palette": [
+      "#0A0F1A",
+      "#1B2538",
+      "#2F3D54",
+      "#E5A032",
+      "#DC2626"
+    ],
+    "lightingStyle": "Chiaroscuro legível com luz pontual controlada, rim light fria e névoa de fundo",
+    "cameraLanguage": "Dolly contínuo, tracking suave, aproximação tensa sem câmeras mortas"
+  },
+  "characterBible": [
+    {
+      "id": "char_daniel_horror",
+      "name": "Daniel Vance",
+      "role": "Protagonista investigador",
+      "genre": "horror",
+      "description": "Homem de sobretudo escuro com lanterna, postura cautelosa e expressões intensas para suspense e terror.",
+      "kind": "rig2d",
+      "hairStyle": "short",
+      "outfitStyle": "coat",
+      "build": "average",
+      "palette": {
+        "skin": "#e0b394",
+        "skinShadow": "#b98364",
+        "hair": "#1f1b18",
+        "eyes": "#38bdf8",
+        "outfitPrimary": "#242c38",
+        "outfitSecondary": "#3b4759",
+        "pants": "#171c24",
+        "boots": "#0f1115",
+        "accent": "#f59e0b"
+      },
+      "accessory": {
+        "type": "flashlight",
+        "color": "#fde68a"
+      },
+      "defaultState": "walk",
+      "defaultExpression": "scared",
+      "availableStates": [
+        "idle",
+        "walk",
+        "run",
+        "sprint",
+        "jump",
+        "fall",
+        "attack",
+        "hit",
+        "death",
+        "talk",
+        "custom"
+      ],
+      "visualSheet": {
+        "sheetVersion": "1.0.0",
+        "signatureHash": "vs_696c5ad1",
+        "heightRatio": 1,
+        "headToBodyRatio": 0.18,
+        "shoulderWidthRatio": 1,
+        "lockedPalette": {
+          "skin": "#e0b394",
+          "skinShadow": "#b98364",
+          "hair": "#1f1b18",
+          "eyes": "#38bdf8",
+          "outfitPrimary": "#242c38",
+          "outfitSecondary": "#3b4759",
+          "pants": "#171c24",
+          "boots": "#0f1115",
+          "accent": "#f59e0b"
+        },
+        "lockedOutfitStyle": "coat",
+        "lockedHairStyle": "short",
+        "lockedAccessory": {
+          "type": "flashlight",
+          "color": "#fde68a"
+        },
+        "supportedCycles": [
+          "idle",
+          "walk",
+          "run",
+          "sprint",
+          "jump",
+          "fall",
+          "attack",
+          "hit",
+          "death",
+          "talk",
+          "custom"
+        ]
+      }
+    },
+    {
+      "id": "char_shadow_entity",
+      "name": "Vulto da Casa",
+      "role": "Entidade sombria antagonista",
+      "genre": "horror",
+      "description": "Figura alta e espectral envolta em penumbra controlada, olhos luminescentes e silhueta alongada.",
+      "kind": "rig2d",
+      "hairStyle": "hooded",
+      "outfitStyle": "spectral",
+      "build": "ethereal",
+      "palette": {
+        "skin": "#141720",
+        "skinShadow": "#07090d",
+        "hair": "#090b10",
+        "eyes": "#ef4444",
+        "outfitPrimary": "#0c0f16",
+        "outfitSecondary": "#1f2433",
+        "pants": "#07090d",
+        "boots": "#050608",
+        "accent": "#dc2626"
+      },
+      "accessory": {
+        "type": "shadow_aura",
+        "color": "#ef4444"
+      },
+      "defaultState": "idle",
+      "defaultExpression": "angry",
+      "availableStates": [
+        "idle",
+        "walk",
+        "run",
+        "sprint",
+        "jump",
+        "fall",
+        "attack",
+        "hit",
+        "death",
+        "talk",
+        "custom"
+      ],
+      "visualSheet": {
+        "sheetVersion": "1.0.0",
+        "signatureHash": "vs_78beead0",
+        "heightRatio": 1.12,
+        "headToBodyRatio": 0.16,
+        "shoulderWidthRatio": 1,
+        "lockedPalette": {
+          "skin": "#141720",
+          "skinShadow": "#07090d",
+          "hair": "#090b10",
+          "eyes": "#ef4444",
+          "outfitPrimary": "#0c0f16",
+          "outfitSecondary": "#1f2433",
+          "pants": "#07090d",
+          "boots": "#050608",
+          "accent": "#dc2626"
+        },
+        "lockedOutfitStyle": "spectral",
+        "lockedHairStyle": "hooded",
+        "lockedAccessory": {
+          "type": "shadow_aura",
+          "color": "#ef4444"
+        },
+        "supportedCycles": [
+          "idle",
+          "walk",
+          "run",
+          "sprint",
+          "jump",
+          "fall",
+          "attack",
+          "hit",
+          "death",
+          "talk",
+          "custom"
+        ]
+      }
+    }
+  ],
+  "scenarios": [
+    {
+      "id": "scene_haunted_hall",
+      "name": "Hall da Casa Abandonada",
+      "genre": "horror",
+      "theme": "haunted_manor_hall",
+      "description": "Interior decadente de madeira antiga com escadaria ao fundo, janelas sob luar e sombras alongadas.",
+      "skyTop": "#070a12",
+      "skyBottom": "#171e2d",
+      "groundColor": "#1a1514",
+      "accentColor": "#60a5fa",
+      "ambientTint": "#111827",
+      "layers": [
+        {
+          "id": "bg",
+          "name": "Paredes e janelas ao luar",
+          "depth": "background",
+          "parallaxFactor": 0.25,
+          "opacity": 1
+        },
+        {
+          "id": "mg",
+          "name": "Escadaria e colunas de madeira",
+          "depth": "midground",
+          "parallaxFactor": 0.6,
+          "opacity": 1
+        },
+        {
+          "id": "fg",
+          "name": "Vigas e poeira em primeiro plano",
+          "depth": "foreground",
+          "parallaxFactor": 1.15,
+          "opacity": 0.9
+        }
+      ],
+      "props": [
+        {
+          "id": "p1",
+          "label": "Janela ao luar",
+          "kind": "window_moon",
+          "x": 0.24,
+          "y": 0.28,
+          "scale": 1.1,
+          "depth": "background"
+        },
+        {
+          "id": "p2",
+          "label": "Escadaria superior",
+          "kind": "staircase",
+          "x": 0.72,
+          "y": 0.56,
+          "scale": 1,
+          "depth": "midground"
+        }
+      ]
+    },
+    {
+      "id": "scene_attic_door",
+      "name": "Corredor da Porta Entreaberta",
+      "genre": "horror",
+      "theme": "abandoned_attic_door",
+      "description": "Corredor estreito no andar de cima com porta entreaberta deixando vazar um feixe frio de luz.",
+      "skyTop": "#06080f",
+      "skyBottom": "#151a26",
+      "groundColor": "#191412",
+      "accentColor": "#fbbf24",
+      "ambientTint": "#0f141e",
+      "layers": [
+        {
+          "id": "bg",
+          "name": "Fundo do corredor escuro",
+          "depth": "background",
+          "parallaxFactor": 0.2,
+          "opacity": 1
+        },
+        {
+          "id": "mg",
+          "name": "Porta entreaberta e molduras",
+          "depth": "midground",
+          "parallaxFactor": 0.58,
+          "opacity": 1
+        },
+        {
+          "id": "fg",
+          "name": "Silhuetas de batentes próximos",
+          "depth": "foreground",
+          "parallaxFactor": 1.2,
+          "opacity": 0.92
+        }
+      ],
+      "props": [
+        {
+          "id": "p1",
+          "label": "Porta entreaberta",
+          "kind": "door_ajar",
+          "x": 0.66,
+          "y": 0.56,
+          "scale": 1.15,
+          "depth": "midground"
+        },
+        {
+          "id": "p2",
+          "label": "Pilar de madeira",
+          "kind": "pillar",
+          "x": 0.14,
+          "y": 0.5,
+          "scale": 1,
+          "depth": "foreground"
+        }
+      ]
+    }
+  ],
+  "script": [
+    {
+      "sceneIndex": 0,
+      "heading": "CENA 1 — DANIEL ENTRA SOZINHO NO SAGUÃO ESCURO",
+      "action": "Daniel entra sozinho no saguão escuro de uma casa abandonada sob a chuva com sua lanterna. (Daniel Vance em Hall da Casa Abandonada).",
+      "dialogue": "(Sem narração — narrativa visual e sonora)",
+      "soundCue": "Atmosfera inicial (wind), Detalhe ambiental (creak)"
+    },
+    {
+      "sceneIndex": 1,
+      "heading": "CENA 2 — ELE PARA AO OUVIR PASSOS LENTOS",
+      "action": "Ele para ao ouvir passos lentos ecoarem no andar de cima. (Daniel Vance em Hall da Casa Abandonada).",
+      "dialogue": "(Sem narração — narrativa visual e sonora)",
+      "soundCue": "Passos acima (knock), Segundo passo (knock), Batimento tenso (heartbeat)"
+    },
+    {
+      "sceneIndex": 2,
+      "heading": "CENA 3 — ELE AVANÇA PELO CORREDOR SUPERIOR",
+      "action": "Ele avança pelo corredor superior e encontra uma porta entreaberta. (Daniel Vance em Corredor da Porta Entreaberta).",
+      "dialogue": "(Sem narração — narrativa visual e sonora)",
+      "soundCue": "Porta rangendo (creak), Tensão crescente (riser)"
+    },
+    {
+      "sceneIndex": 3,
+      "heading": "CENA 4 — ENQUANTO OBSERVA A PORTA, UMA SILHUETA",
+      "action": "Enquanto observa a porta, uma silhueta aparece ao fundo do corredor. (Daniel Vance em Corredor da Porta Entreaberta).",
+      "dialogue": "(Sem narração — narrativa visual e sonora)",
+      "soundCue": "Chuva e vento na rua (wind), Sensação de vigilância (heartbeat), Silhueta ao fundo (riser)"
+    },
+    {
+      "sceneIndex": 4,
+      "heading": "CENA 5 — ELE SE VIRA ASSUSTADO QUANDO",
+      "action": "Ele se vira assustado quando a sombra avança em sua direção pelo corredor. (Daniel Vance em Corredor da Porta Entreaberta).",
+      "dialogue": "(Sem narração — narrativa visual e sonora)",
+      "soundCue": "Crescendo de revelação (riser), Impacto dramático (sting), Sub-grave (boom)"
+    },
+    {
+      "sceneIndex": 5,
+      "heading": "CENA 6 — A LUZ SE APAGA ENQUANTO",
+      "action": "A luz se apaga enquanto a sombra domina o corredor e a tela corta para preto. (Daniel Vance em Corredor da Porta Entreaberta).",
+      "dialogue": "(Sem narração — narrativa visual e sonora)",
+      "soundCue": "Crescendo de revelação (riser), Impacto dramático (sting), Sub-grave (boom)"
+    }
+  ],
+  "scenes": [
+    {
+      "id": "scene_1_dsr8",
+      "index": 0,
+      "title": "Daniel entra sozinho no saguão escuro",
+      "summary": "Daniel entra sozinho no saguão escuro de uma casa abandonada sob a chuva com sua lanterna. (Daniel Vance em Hall da Casa Abandonada).",
+      "sourceBeat": "Daniel entra sozinho no saguão escuro de uma casa abandonada sob a chuva com sua lanterna.",
+      "expectedKeywords": [
+        "daniel",
+        "entra",
+        "sozinho",
+        "saguao",
+        "escuro"
+      ],
+      "causalChain": {
+        "whatHappenedBefore": "Início da narrativa: Daniel Vance entra em cena ainda sem conhecer a ameaça.",
+        "whatHappensNow": "Daniel entra sozinho no saguão escuro de uma casa abandonada sob a chuva com sua lanterna.",
+        "whatChanges": "Estabelece Daniel Vance no espaço (Hall da Casa Abandonada) e a condição inicial antes da ruptura.",
+        "howItTriggersNext": "Essa mudança obriga Daniel Vance a reagir diretamente na Cena 2: \"Ele para ao ouvir passos lentos ecoarem no andar de cima.\".",
+        "narrativeObjective": "Situar ambiente, protagonista e atmosfera sem expor a ameaça cedo demais."
+      },
+      "narrativeIntent": "abertura",
+      "duration": 5,
+      "scenarioId": "scene_haunted_hall",
+      "framing": "wide",
+      "cameraMove": "dolly_in",
+      "secondaryCameraMove": "tracking",
+      "cameraIntensity": 0.58,
+      "cameraMotivation": "Estabelecer a geografia do espaço e o isolamento do protagonista antes da tensão.",
+      "focusTarget": "environment",
+      "transitionIn": "fade_black",
+      "endingImpact": "none",
+      "reflectionMode": "none",
+      "lighting": {
+        "ambientIntensity": 0.42,
+        "ambientColor": "#101828",
+        "directionalAngle": 28,
+        "directionalIntensity": 0.32,
+        "directionalColor": "#7dd3fc",
+        "pointLightEnabled": true,
+        "pointLightX": 0.45,
+        "pointLightY": 0.45,
+        "pointLightRadius": 0.36,
+        "pointLightColor": "#fef08a",
+        "pointLightFlicker": 0.08,
+        "rimLightIntensity": 0.48,
+        "rimLightColor": "#60a5fa",
+        "shadowsEnabled": true,
+        "shadowIntensity": 0.7,
+        "volumetricIntensity": 0.18,
+        "glowIntensity": 0.12,
+        "bloomIntensity": 0.12
+      },
+      "effects": {
+        "fog": 0.16,
+        "dust": 0.34,
+        "rain": 0.36,
+        "snow": 0,
+        "smoke": 0.06,
+        "fire": 0,
+        "sparks": 0,
+        "vignette": 0.44,
+        "filmGrain": 0.16,
+        "chromaticAberration": 0,
+        "scanlines": 0,
+        "glitch": 0,
+        "cameraShake": 0.03,
+        "motionBlur": 0
+      },
+      "actors": [
+        {
+          "id": "actor_main_0",
+          "characterId": "char_daniel_horror",
+          "x": 0.18,
+          "y": 0.77,
+          "targetX": 0.44,
+          "targetY": 0.77,
+          "scale": 1,
+          "opacity": 1,
+          "flipX": false,
+          "rotation": 0,
+          "state": "walk",
+          "nextState": "idle",
+          "stateTransitionRatio": 0.56,
+          "actionPhases": [
+            {
+              "atProgress": 0,
+              "state": "walk",
+              "expression": "neutral",
+              "lookDirection": "forward"
+            },
+            {
+              "atProgress": 0.52,
+              "state": "walk",
+              "expression": "surprised",
+              "lookDirection": "scan"
+            },
+            {
+              "atProgress": 0.84,
+              "state": "idle",
+              "expression": "scared",
+              "lookDirection": "scan"
+            }
+          ],
+          "lookDirection": "scan",
+          "revealMode": "visible",
+          "expression": "neutral",
+          "easing": "ease_in_out",
+          "dialogue": ""
+        }
+      ],
+      "sfxEvents": [
+        {
+          "id": "sfx_lq1jiko",
+          "sfx": "wind",
+          "offsetSec": 0.25,
+          "volume": 0.48,
+          "label": "Atmosfera inicial"
+        },
+        {
+          "id": "sfx_xgupjbp",
+          "sfx": "creak",
+          "offsetSec": 1.85,
+          "volume": 0.65,
+          "label": "Detalhe ambiental"
+        }
+      ],
+      "captionText": "",
+      "captionEmphasisWords": [],
+      "visualPrompt": "Daniel entra sozinho no saguão escuro — Daniel entra sozinho no saguão escuro de uma casa abandonada sob a chuva com sua lanterna. (wide, dolly_in)",
+      "colorPalette": [
+        "#0A0F1A",
+        "#1B2538",
+        "#2F3D54",
+        "#E5A032",
+        "#DC2626"
+      ]
+    },
+    {
+      "id": "scene_2_hh33",
+      "index": 1,
+      "title": "Ele para ao ouvir passos lentos",
+      "summary": "Ele para ao ouvir passos lentos ecoarem no andar de cima. (Daniel Vance em Hall da Casa Abandonada).",
+      "sourceBeat": "Ele para ao ouvir passos lentos ecoarem no andar de cima.",
+      "expectedKeywords": [
+        "ouvir",
+        "passos",
+        "lentos",
+        "ecoarem",
+        "andar"
+      ],
+      "causalChain": {
+        "whatHappenedBefore": "Na Cena 1, daniel entra sozinho no saguão escuro de uma casa abandonada sob a chuva com sua lanterna. (Estabelece Daniel Vance no espaço (Hall da Casa Abandonada) e a condição inicial antes da ruptura.)",
+        "whatHappensNow": "Ele para ao ouvir passos lentos ecoarem no andar de cima.",
+        "whatChanges": "O silêncio do local é rompido por um estímulo sonoro que altera o estado emocional para alerta.",
+        "howItTriggersNext": "Essa mudança obriga Daniel Vance a reagir diretamente na Cena 3: \"Ele avança pelo corredor superior e encontra uma porta entreaberta.\".",
+        "narrativeObjective": "Introduzir o primeiro sinal concreto de anomalia que quebra a sensação de segurança."
+      },
+      "narrativeIntent": "tensao",
+      "duration": 5,
+      "scenarioId": "scene_haunted_hall",
+      "framing": "close_up",
+      "cameraMove": "tilt",
+      "secondaryCameraMove": "handheld",
+      "cameraIntensity": 0.58,
+      "cameraMotivation": "Aproximar do rosto e olhar para cima de modo a evidenciar o instante exato da escuta dos passos.",
+      "focusTarget": "subject_face",
+      "transitionIn": "crossfade",
+      "endingImpact": "none",
+      "reflectionMode": "none",
+      "lighting": {
+        "ambientIntensity": 0.42,
+        "ambientColor": "#101828",
+        "directionalAngle": 28,
+        "directionalIntensity": 0.32,
+        "directionalColor": "#7dd3fc",
+        "pointLightEnabled": true,
+        "pointLightX": 0.45,
+        "pointLightY": 0.45,
+        "pointLightRadius": 0.36,
+        "pointLightColor": "#fef08a",
+        "pointLightFlicker": 0.08,
+        "rimLightIntensity": 0.48,
+        "rimLightColor": "#60a5fa",
+        "shadowsEnabled": true,
+        "shadowIntensity": 0.7,
+        "volumetricIntensity": 0.18,
+        "glowIntensity": 0.12,
+        "bloomIntensity": 0.12
+      },
+      "effects": {
+        "fog": 0.16,
+        "dust": 0.34,
+        "rain": 0.36,
+        "snow": 0,
+        "smoke": 0.06,
+        "fire": 0,
+        "sparks": 0,
+        "vignette": 0.44,
+        "filmGrain": 0.16,
+        "chromaticAberration": 0,
+        "scanlines": 0,
+        "glitch": 0,
+        "cameraShake": 0.08,
+        "motionBlur": 0
+      },
+      "actors": [
+        {
+          "id": "actor_main_1",
+          "characterId": "char_daniel_horror",
+          "x": 0.44,
+          "y": 0.77,
+          "targetX": 0.5800000000000001,
+          "targetY": 0.77,
+          "scale": 1.06,
+          "opacity": 1,
+          "flipX": false,
+          "rotation": 0,
+          "state": "walk",
+          "nextState": "walk",
+          "stateTransitionRatio": 0.56,
+          "actionPhases": [
+            {
+              "atProgress": 0,
+              "state": "walk",
+              "expression": "neutral",
+              "lookDirection": "forward"
+            },
+            {
+              "atProgress": 0.28,
+              "state": "idle",
+              "expression": "surprised",
+              "lookDirection": "up"
+            },
+            {
+              "atProgress": 0.62,
+              "state": "idle",
+              "expression": "scared",
+              "lookDirection": "scan"
+            },
+            {
+              "atProgress": 0.8,
+              "state": "walk",
+              "expression": "determined",
+              "lookDirection": "up"
+            }
+          ],
+          "lookDirection": "up",
+          "revealMode": "visible",
+          "expression": "surprised",
+          "easing": "ease_in_out",
+          "dialogue": ""
+        }
+      ],
+      "sfxEvents": [
+        {
+          "id": "sfx_wvdzil1",
+          "sfx": "knock",
+          "offsetSec": 0.8,
+          "volume": 0.82,
+          "label": "Passos acima"
+        },
+        {
+          "id": "sfx_ykr7omi",
+          "sfx": "knock",
+          "offsetSec": 1.6,
+          "volume": 0.76,
+          "label": "Segundo passo"
+        },
+        {
+          "id": "sfx_ulzircf",
+          "sfx": "heartbeat",
+          "offsetSec": 2.2,
+          "volume": 0.64,
+          "label": "Batimento tenso"
+        }
+      ],
+      "captionText": "",
+      "captionEmphasisWords": [],
+      "visualPrompt": "Ele para ao ouvir passos lentos — Ele para ao ouvir passos lentos ecoarem no andar de cima. (close_up, tilt)",
+      "colorPalette": [
+        "#0A0F1A",
+        "#1B2538",
+        "#2F3D54",
+        "#E5A032",
+        "#DC2626"
+      ]
+    },
+    {
+      "id": "scene_3_p2qy",
+      "index": 2,
+      "title": "Ele avança pelo corredor superior",
+      "summary": "Ele avança pelo corredor superior e encontra uma porta entreaberta. (Daniel Vance em Corredor da Porta Entreaberta).",
+      "sourceBeat": "Ele avança pelo corredor superior e encontra uma porta entreaberta.",
+      "expectedKeywords": [
+        "avanca",
+        "corredor",
+        "superior",
+        "encontra",
+        "porta"
+      ],
+      "causalChain": {
+        "whatHappenedBefore": "Na Cena 2, ele para ao ouvir passos lentos ecoarem no andar de cima. (O silêncio do local é rompido por um estímulo sonoro que altera o estado emocional para alerta.)",
+        "whatHappensNow": "Ele avança pelo corredor superior e encontra uma porta entreaberta.",
+        "whatChanges": "O personagem encontra o limiar físico que concentra a origem da anomalia.",
+        "howItTriggersNext": "Essa mudança obriga Daniel Vance a reagir diretamente na Cena 4: \"Enquanto observa a porta, uma silhueta aparece ao fundo do corredor.\".",
+        "narrativeObjective": "Aprofundar a investigação e escalar o conflito com consequência direta da pista anterior."
+      },
+      "narrativeIntent": "desenvolvimento",
+      "duration": 5,
+      "scenarioId": "scene_attic_door",
+      "framing": "detail",
+      "cameraMove": "pan",
+      "secondaryCameraMove": "dolly_in",
+      "cameraIntensity": 0.58,
+      "cameraMotivation": "Destacar a porta/limiar como objeto central de tensão antes da aproximação final.",
+      "focusTarget": "prop_clue",
+      "transitionIn": "crossfade",
+      "endingImpact": "none",
+      "reflectionMode": "none",
+      "lighting": {
+        "ambientIntensity": 0.42,
+        "ambientColor": "#101828",
+        "directionalAngle": 28,
+        "directionalIntensity": 0.32,
+        "directionalColor": "#7dd3fc",
+        "pointLightEnabled": true,
+        "pointLightX": 0.45,
+        "pointLightY": 0.45,
+        "pointLightRadius": 0.36,
+        "pointLightColor": "#fef08a",
+        "pointLightFlicker": 0.08,
+        "rimLightIntensity": 0.48,
+        "rimLightColor": "#60a5fa",
+        "shadowsEnabled": true,
+        "shadowIntensity": 0.7,
+        "volumetricIntensity": 0.18,
+        "glowIntensity": 0.12,
+        "bloomIntensity": 0.12
+      },
+      "effects": {
+        "fog": 0.16,
+        "dust": 0.34,
+        "rain": 0.36,
+        "snow": 0,
+        "smoke": 0.06,
+        "fire": 0,
+        "sparks": 0,
+        "vignette": 0.44,
+        "filmGrain": 0.16,
+        "chromaticAberration": 0,
+        "scanlines": 0,
+        "glitch": 0,
+        "cameraShake": 0.03,
+        "motionBlur": 0
+      },
+      "actors": [
+        {
+          "id": "actor_main_2",
+          "characterId": "char_daniel_horror",
+          "x": 0.24,
+          "y": 0.77,
+          "targetX": 0.54,
+          "targetY": 0.77,
+          "scale": 1,
+          "opacity": 1,
+          "flipX": false,
+          "rotation": 0,
+          "state": "walk",
+          "nextState": "idle",
+          "stateTransitionRatio": 0.56,
+          "actionPhases": [
+            {
+              "atProgress": 0,
+              "state": "walk",
+              "expression": "determined",
+              "lookDirection": "forward"
+            },
+            {
+              "atProgress": 0.55,
+              "state": "walk",
+              "expression": "scared",
+              "lookDirection": "scan"
+            },
+            {
+              "atProgress": 0.8,
+              "state": "idle",
+              "expression": "surprised",
+              "lookDirection": "forward"
+            }
+          ],
+          "lookDirection": "scan",
+          "revealMode": "visible",
+          "expression": "scared",
+          "easing": "ease_in_out",
+          "dialogue": ""
+        }
+      ],
+      "sfxEvents": [
+        {
+          "id": "sfx_fv0u5ik",
+          "sfx": "creak",
+          "offsetSec": 0.65,
+          "volume": 0.82,
+          "label": "Porta rangendo"
+        },
+        {
+          "id": "sfx_7g5t3of",
+          "sfx": "riser",
+          "offsetSec": 2.1,
+          "volume": 0.58,
+          "label": "Tensão crescente"
+        }
+      ],
+      "captionText": "",
+      "captionEmphasisWords": [],
+      "visualPrompt": "Ele avança pelo corredor superior — Ele avança pelo corredor superior e encontra uma porta entreaberta. (detail, pan)",
+      "colorPalette": [
+        "#0A0F1A",
+        "#1B2538",
+        "#2F3D54",
+        "#E5A032",
+        "#DC2626"
+      ]
+    },
+    {
+      "id": "scene_4_65e1",
+      "index": 3,
+      "title": "Enquanto observa a porta, uma silhueta",
+      "summary": "Enquanto observa a porta, uma silhueta aparece ao fundo do corredor. (Daniel Vance em Corredor da Porta Entreaberta).",
+      "sourceBeat": "Enquanto observa a porta, uma silhueta aparece ao fundo do corredor.",
+      "expectedKeywords": [
+        "enquanto",
+        "observa",
+        "porta",
+        "silhueta",
+        "aparece"
+      ],
+      "causalChain": {
+        "whatHappenedBefore": "Na Cena 3, ele avança pelo corredor superior e encontra uma porta entreaberta. (O personagem encontra o limiar físico que concentra a origem da anomalia.)",
+        "whatHappensNow": "Enquanto observa a porta, uma silhueta aparece ao fundo do corredor.",
+        "whatChanges": "O isolamento inicial é quebrado pelo surgimento de uma silhueta inexplicável ao fundo.",
+        "howItTriggersNext": "Essa mudança obriga Daniel Vance a reagir diretamente na Cena 5: \"Ele se vira assustado quando a sombra avança em sua direção pelo corredor.\".",
+        "narrativeObjective": "Aprofundar a investigação e escalar o conflito com consequência direta da pista anterior."
+      },
+      "narrativeIntent": "desenvolvimento",
+      "duration": 6,
+      "scenarioId": "scene_attic_door",
+      "framing": "medium",
+      "cameraMove": "tracking",
+      "secondaryCameraMove": "dolly_in",
+      "cameraIntensity": 0.58,
+      "cameraMotivation": "Seguir o deslocamento mantendo profundidade de fundo livre para o surgimento gradual da silhueta.",
+      "focusTarget": "subject_body",
+      "transitionIn": "crossfade",
+      "endingImpact": "none",
+      "reflectionMode": "none",
+      "lighting": {
+        "ambientIntensity": 0.42,
+        "ambientColor": "#101828",
+        "directionalAngle": 28,
+        "directionalIntensity": 0.32,
+        "directionalColor": "#7dd3fc",
+        "pointLightEnabled": true,
+        "pointLightX": 0.45,
+        "pointLightY": 0.45,
+        "pointLightRadius": 0.36,
+        "pointLightColor": "#fef08a",
+        "pointLightFlicker": 0.08,
+        "rimLightIntensity": 0.48,
+        "rimLightColor": "#60a5fa",
+        "shadowsEnabled": true,
+        "shadowIntensity": 0.7,
+        "volumetricIntensity": 0.18,
+        "glowIntensity": 0.12,
+        "bloomIntensity": 0.12
+      },
+      "effects": {
+        "fog": 0.16,
+        "dust": 0.34,
+        "rain": 0.36,
+        "snow": 0,
+        "smoke": 0.06,
+        "fire": 0,
+        "sparks": 0,
+        "vignette": 0.44,
+        "filmGrain": 0.16,
+        "chromaticAberration": 0,
+        "scanlines": 0,
+        "glitch": 0,
+        "cameraShake": 0.03,
+        "motionBlur": 0
+      },
+      "actors": [
+        {
+          "id": "actor_main_3",
+          "characterId": "char_daniel_horror",
+          "x": 0.5,
+          "y": 0.77,
+          "targetX": 0.6,
+          "targetY": 0.77,
+          "scale": 1,
+          "opacity": 1,
+          "flipX": false,
+          "rotation": 0,
+          "state": "walk",
+          "nextState": "walk",
+          "stateTransitionRatio": 0.56,
+          "actionPhases": [
+            {
+              "atProgress": 0,
+              "state": "walk",
+              "expression": "neutral",
+              "lookDirection": "forward"
+            },
+            {
+              "atProgress": 0.48,
+              "state": "walk",
+              "expression": "surprised",
+              "lookDirection": "scan"
+            },
+            {
+              "atProgress": 0.78,
+              "state": "walk",
+              "expression": "scared",
+              "lookDirection": "back"
+            }
+          ],
+          "lookDirection": "forward",
+          "revealMode": "visible",
+          "expression": "determined",
+          "easing": "ease_in_out",
+          "dialogue": ""
+        },
+        {
+          "id": "actor_silhouette_3",
+          "characterId": "char_shadow_entity",
+          "x": 0.84,
+          "y": 0.7,
+          "targetX": 0.78,
+          "targetY": 0.71,
+          "scale": 0.74,
+          "opacity": 0.72,
+          "flipX": true,
+          "rotation": 0,
+          "state": "idle",
+          "nextState": "walk",
+          "stateTransitionRatio": 0.52,
+          "actionPhases": [
+            {
+              "atProgress": 0.15,
+              "state": "idle",
+              "expression": "angry",
+              "lookDirection": "forward"
+            },
+            {
+              "atProgress": 0.55,
+              "state": "walk",
+              "expression": "angry",
+              "lookDirection": "forward"
+            }
+          ],
+          "revealMode": "foreshadow",
+          "enterProgress": 0.16,
+          "exitProgress": 0.96,
+          "expression": "angry",
+          "easing": "ease_in_out",
+          "isShadowEntity": true
+        }
+      ],
+      "sfxEvents": [
+        {
+          "id": "sfx_v8dv9l3",
+          "sfx": "wind",
+          "offsetSec": 0.2,
+          "volume": 0.44,
+          "label": "Chuva e vento na rua"
+        },
+        {
+          "id": "sfx_ly5tw81",
+          "sfx": "heartbeat",
+          "offsetSec": 1.5,
+          "volume": 0.62,
+          "label": "Sensação de vigilância"
+        },
+        {
+          "id": "sfx_ysz6gcm",
+          "sfx": "riser",
+          "offsetSec": 2.8,
+          "volume": 0.65,
+          "label": "Silhueta ao fundo"
+        }
+      ],
+      "captionText": "",
+      "captionEmphasisWords": [],
+      "visualPrompt": "Enquanto observa a porta, uma silhueta — Enquanto observa a porta, uma silhueta aparece ao fundo do corredor. (medium, tracking)",
+      "colorPalette": [
+        "#0A0F1A",
+        "#1B2538",
+        "#2F3D54",
+        "#E5A032",
+        "#DC2626"
+      ]
+    },
+    {
+      "id": "scene_5_fluv",
+      "index": 4,
+      "title": "Ele se vira assustado quando",
+      "summary": "Ele se vira assustado quando a sombra avança em sua direção pelo corredor. (Daniel Vance em Corredor da Porta Entreaberta).",
+      "sourceBeat": "Ele se vira assustado quando a sombra avança em sua direção pelo corredor.",
+      "expectedKeywords": [
+        "vira",
+        "assustado",
+        "sombra",
+        "avanca",
+        "direcao"
+      ],
+      "causalChain": {
+        "whatHappenedBefore": "Na Cena 4, enquanto observa a porta, uma silhueta aparece ao fundo do corredor. (O isolamento inicial é quebrado pelo surgimento de uma silhueta inexplicável ao fundo.)",
+        "whatHappensNow": "Ele se vira assustado quando a sombra avança em sua direção pelo corredor.",
+        "whatChanges": "A ameaça oculta se manifesta diretamente no espaço do protagonista e força recuo imediato.",
+        "howItTriggersNext": "Essa mudança obriga Daniel Vance a reagir diretamente na Cena 6: \"A luz se apaga enquanto a sombra domina o corredor e a tela corta para preto.\".",
+        "narrativeObjective": "Entregar a ruptura psicológica ou física que concentra toda a tensão acumulada."
+      },
+      "narrativeIntent": "climax",
+      "duration": 5,
+      "scenarioId": "scene_attic_door",
+      "framing": "low_angle",
+      "cameraMove": "zoom",
+      "secondaryCameraMove": "dutch_angle",
+      "cameraIntensity": 0.78,
+      "cameraMotivation": "Usar contra-plongée tenso para ampliar a presença da sombra avançando sobre o protagonista.",
+      "focusTarget": "subject_body",
+      "transitionIn": "crossfade",
+      "endingImpact": "none",
+      "reflectionMode": "none",
+      "lighting": {
+        "ambientIntensity": 0.36,
+        "ambientColor": "#101828",
+        "directionalAngle": 42,
+        "directionalIntensity": 0.36,
+        "directionalColor": "#7dd3fc",
+        "pointLightEnabled": true,
+        "pointLightX": 0.45,
+        "pointLightY": 0.45,
+        "pointLightRadius": 0.36,
+        "pointLightColor": "#fde68a",
+        "pointLightFlicker": 0.16,
+        "rimLightIntensity": 0.62,
+        "rimLightColor": "#f87171",
+        "shadowsEnabled": true,
+        "shadowIntensity": 0.7,
+        "volumetricIntensity": 0.18,
+        "glowIntensity": 0.12,
+        "bloomIntensity": 0.12
+      },
+      "effects": {
+        "fog": 0.2,
+        "dust": 0.34,
+        "rain": 0.36,
+        "snow": 0,
+        "smoke": 0.1,
+        "fire": 0,
+        "sparks": 0,
+        "vignette": 0.56,
+        "filmGrain": 0.16,
+        "chromaticAberration": 0,
+        "scanlines": 0,
+        "glitch": 0,
+        "cameraShake": 0.22,
+        "motionBlur": 0
+      },
+      "actors": [
+        {
+          "id": "actor_main_4",
+          "characterId": "char_daniel_horror",
+          "x": 0.6,
+          "y": 0.77,
+          "targetX": 0.45999999999999996,
+          "targetY": 0.77,
+          "scale": 1,
+          "opacity": 1,
+          "flipX": true,
+          "rotation": 0,
+          "state": "idle",
+          "nextState": "run",
+          "stateTransitionRatio": 0.56,
+          "actionPhases": [
+            {
+              "atProgress": 0,
+              "state": "walk",
+              "expression": "determined",
+              "lookDirection": "forward"
+            },
+            {
+              "atProgress": 0.24,
+              "state": "idle",
+              "expression": "surprised",
+              "lookDirection": "back"
+            },
+            {
+              "atProgress": 0.52,
+              "state": "hit",
+              "expression": "scared",
+              "lookDirection": "back"
+            },
+            {
+              "atProgress": 0.78,
+              "state": "run",
+              "expression": "scared",
+              "lookDirection": "forward"
+            }
+          ],
+          "lookDirection": "back",
+          "revealMode": "visible",
+          "expression": "scared",
+          "easing": "ease_in_out",
+          "dialogue": ""
+        },
+        {
+          "id": "actor_shadow_4",
+          "characterId": "char_shadow_entity",
+          "x": 0.78,
+          "y": 0.74,
+          "targetX": 0.64,
+          "targetY": 0.76,
+          "scale": 1.08,
+          "opacity": 0.92,
+          "flipX": true,
+          "rotation": 0,
+          "state": "walk",
+          "nextState": "attack",
+          "stateTransitionRatio": 0.62,
+          "actionPhases": [
+            {
+              "atProgress": 0.2,
+              "state": "idle",
+              "expression": "angry",
+              "lookDirection": "forward"
+            },
+            {
+              "atProgress": 0.45,
+              "state": "walk",
+              "expression": "angry",
+              "lookDirection": "forward"
+            },
+            {
+              "atProgress": 0.72,
+              "state": "attack",
+              "expression": "angry",
+              "lookDirection": "forward"
+            }
+          ],
+          "revealMode": "emerge",
+          "enterProgress": 0.22,
+          "expression": "angry",
+          "easing": "ease_out",
+          "isShadowEntity": true
+        }
+      ],
+      "sfxEvents": [
+        {
+          "id": "sfx_pcc5kbm",
+          "sfx": "riser",
+          "offsetSec": 0.25,
+          "volume": 0.72,
+          "label": "Crescendo de revelação"
+        },
+        {
+          "id": "sfx_9xgx4m0",
+          "sfx": "sting",
+          "offsetSec": 1.55,
+          "volume": 0.92,
+          "label": "Impacto dramático"
+        },
+        {
+          "id": "sfx_xnd4ic4",
+          "sfx": "boom",
+          "offsetSec": 2.2,
+          "volume": 0.85,
+          "label": "Sub-grave"
+        }
+      ],
+      "captionText": "",
+      "captionEmphasisWords": [],
+      "visualPrompt": "Ele se vira assustado quando — Ele se vira assustado quando a sombra avança em sua direção pelo corredor. (low_angle, zoom)",
+      "colorPalette": [
+        "#0A0F1A",
+        "#1B2538",
+        "#2F3D54",
+        "#E5A032",
+        "#DC2626"
+      ]
+    },
+    {
+      "id": "scene_6_xmi5",
+      "index": 5,
+      "title": "A luz se apaga enquanto",
+      "summary": "A luz se apaga enquanto a sombra domina o corredor e a tela corta para preto. (Daniel Vance em Corredor da Porta Entreaberta).",
+      "sourceBeat": "A luz se apaga enquanto a sombra domina o corredor e a tela corta para preto.",
+      "expectedKeywords": [
+        "apaga",
+        "enquanto",
+        "sombra",
+        "domina",
+        "corredor"
+      ],
+      "causalChain": {
+        "whatHappenedBefore": "Na Cena 5, ele se vira assustado quando a sombra avança em sua direção pelo corredor. (A ameaça oculta se manifesta diretamente no espaço do protagonista e força recuo imediato.)",
+        "whatHappensNow": "A luz se apaga enquanto a sombra domina o corredor e a tela corta para preto.",
+        "whatChanges": "A iluminação falha e o arco dramático atinge consequência irreversível com fechamento visual definitivo.",
+        "howItTriggersNext": "Consequência definitiva que conclui o arco narrativo com fechamento visual.",
+        "narrativeObjective": "Selar a consequência final com impacto visual claro e coerente com o arco construído."
+      },
+      "narrativeIntent": "encerramento",
+      "duration": 4,
+      "scenarioId": "scene_attic_door",
+      "framing": "extreme_close_up",
+      "cameraMove": "dolly_out",
+      "secondaryCameraMove": "tilt",
+      "cameraIntensity": 0.72,
+      "cameraMotivation": "Comprimir o enquadramento no desfecho enquanto a luz se apaga para maximizar o impacto do corte final.",
+      "focusTarget": "subject_face",
+      "transitionIn": "crossfade",
+      "endingImpact": "cut_to_black",
+      "reflectionMode": "none",
+      "lighting": {
+        "ambientIntensity": 0.32,
+        "ambientColor": "#101828",
+        "directionalAngle": 28,
+        "directionalIntensity": 0.32,
+        "directionalColor": "#7dd3fc",
+        "pointLightEnabled": true,
+        "pointLightX": 0.45,
+        "pointLightY": 0.45,
+        "pointLightRadius": 0.36,
+        "pointLightColor": "#fef08a",
+        "pointLightFlicker": 0.08,
+        "rimLightIntensity": 0.48,
+        "rimLightColor": "#f87171",
+        "shadowsEnabled": true,
+        "shadowIntensity": 0.7,
+        "volumetricIntensity": 0.18,
+        "glowIntensity": 0.12,
+        "bloomIntensity": 0.12
+      },
+      "effects": {
+        "fog": 0.16,
+        "dust": 0.34,
+        "rain": 0.36,
+        "snow": 0,
+        "smoke": 0.06,
+        "fire": 0,
+        "sparks": 0,
+        "vignette": 0.44,
+        "filmGrain": 0.16,
+        "chromaticAberration": 0,
+        "scanlines": 0,
+        "glitch": 0,
+        "cameraShake": 0.03,
+        "motionBlur": 0
+      },
+      "actors": [
+        {
+          "id": "actor_main_5",
+          "characterId": "char_daniel_horror",
+          "x": 0.45999999999999996,
+          "y": 0.77,
+          "targetX": 0.31999999999999995,
+          "targetY": 0.77,
+          "scale": 1.12,
+          "opacity": 1,
+          "flipX": true,
+          "rotation": 0,
+          "state": "idle",
+          "nextState": "run",
+          "stateTransitionRatio": 0.56,
+          "actionPhases": [
+            {
+              "atProgress": 0,
+              "state": "walk",
+              "expression": "determined",
+              "lookDirection": "forward"
+            },
+            {
+              "atProgress": 0.24,
+              "state": "idle",
+              "expression": "surprised",
+              "lookDirection": "back"
+            },
+            {
+              "atProgress": 0.52,
+              "state": "hit",
+              "expression": "scared",
+              "lookDirection": "back"
+            },
+            {
+              "atProgress": 0.78,
+              "state": "run",
+              "expression": "scared",
+              "lookDirection": "forward"
+            }
+          ],
+          "lookDirection": "back",
+          "revealMode": "visible",
+          "expression": "scared",
+          "easing": "ease_in_out",
+          "dialogue": ""
+        },
+        {
+          "id": "actor_shadow_5",
+          "characterId": "char_shadow_entity",
+          "x": 0.64,
+          "y": 0.76,
+          "targetX": 0.5,
+          "targetY": 0.76,
+          "scale": 1.18,
+          "opacity": 0.96,
+          "flipX": true,
+          "rotation": 0,
+          "state": "idle",
+          "nextState": "attack",
+          "stateTransitionRatio": 0.62,
+          "actionPhases": [
+            {
+              "atProgress": 0,
+              "state": "walk",
+              "expression": "angry",
+              "lookDirection": "forward"
+            },
+            {
+              "atProgress": 0.55,
+              "state": "idle",
+              "expression": "angry",
+              "lookDirection": "forward"
+            }
+          ],
+          "revealMode": "visible",
+          "enterProgress": 0,
+          "expression": "angry",
+          "easing": "ease_out",
+          "isShadowEntity": true
+        }
+      ],
+      "sfxEvents": [
+        {
+          "id": "sfx_jtdhsez",
+          "sfx": "riser",
+          "offsetSec": 0.25,
+          "volume": 0.72,
+          "label": "Crescendo de revelação"
+        },
+        {
+          "id": "sfx_8al8q6p",
+          "sfx": "sting",
+          "offsetSec": 1.55,
+          "volume": 0.92,
+          "label": "Impacto dramático"
+        },
+        {
+          "id": "sfx_a82blxn",
+          "sfx": "boom",
+          "offsetSec": 2.2,
+          "volume": 0.85,
+          "label": "Sub-grave"
+        }
+      ],
+      "captionText": "",
+      "captionEmphasisWords": [],
+      "visualPrompt": "A luz se apaga enquanto — A luz se apaga enquanto a sombra domina o corredor e a tela corta para preto. (extreme_close_up, dolly_out)",
+      "colorPalette": [
+        "#0A0F1A",
+        "#1B2538",
+        "#2F3D54",
+        "#E5A032",
+        "#DC2626"
+      ]
+    }
+  ],
+  "continuityLedger": [
+    {
+      "characterId": "char_daniel_horror",
+      "characterName": "Daniel Vance",
+      "emotionalState": "scared",
+      "lastPositionX": 0.31999999999999995,
+      "lastScenarioId": "scene_attic_door",
+      "carriedProp": "flashlight",
+      "actionHistory": [
+        "Cena 1 (Daniel entra sozinho no saguão escuro): walk -> idle [X:0.18->0.44, expr:neutral]",
+        "Cena 2 (Ele para ao ouvir passos lentos): walk [X:0.44->0.58, expr:surprised]",
+        "Cena 3 (Ele avança pelo corredor superior): walk -> idle [X:0.24->0.54, expr:scared]",
+        "Cena 4 (Enquanto observa a porta, uma silhueta): walk [X:0.50->0.60, expr:determined]",
+        "Cena 5 (Ele se vira assustado quando): idle -> run [X:0.60->0.46, expr:scared]",
+        "Cena 6 (A luz se apaga enquanto): idle -> run [X:0.46->0.32, expr:scared]"
+      ]
+    },
+    {
+      "characterId": "char_shadow_entity",
+      "characterName": "Vulto da Casa",
+      "emotionalState": "angry",
+      "lastPositionX": 0.5,
+      "lastScenarioId": "scene_attic_door",
+      "carriedProp": "shadow_aura",
+      "actionHistory": [
+        "Cena 4 (Enquanto observa a porta, uma silhueta): idle -> walk [X:0.84->0.78, expr:angry]",
+        "Cena 5 (Ele se vira assustado quando): walk -> attack [X:0.78->0.64, expr:angry]",
+        "Cena 6 (A luz se apaga enquanto): idle -> attack [X:0.64->0.50, expr:angry]"
+      ]
+    }
+  ],
+  "audio": {
+    "musicStyle": "horror_drone",
+    "musicVolume": 0.48,
+    "sfxVolume": 0.85,
+    "voiceVolume": 0,
+    "fadeInSec": 1.2,
+    "fadeOutSec": 1.8,
+    "duckingAmount": 0.42,
+    "normalize": true,
+    "narrationMode": "none"
+  },
+  "captions": {
+    "enabled": false,
+    "preset": "noir_minimal",
+    "fontSize": 34,
+    "positionY": 0.84,
+    "safeAreaMargin": 0.08,
+    "highlightColor": "#E5A032",
+    "textColor": "#F8FAFC",
+    "outlineWidth": 4,
+    "shadowBlur": 10,
+    "enterAnimation": "pop",
+    "exitAnimation": "fade"
+  },
+  "createdAt": "2026-11-20T17:09:57.600Z",
+  "updatedAt": "2026-11-20T17:09:57.600Z"
+}

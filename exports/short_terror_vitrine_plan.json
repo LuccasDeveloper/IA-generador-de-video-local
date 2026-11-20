@@ -1,0 +1,1216 @@
+{
+  "schemaVersion": "1.0.0",
+  "id": "proj_mwp7kf7c",
+  "title": "O Reflexo na Vitrine",
+  "prompt": "Short de terror 2D com 30 segundos, formato vertical 9:16, sem narração, com efeitos sonoros cinematográficos.\n1. 0–5s: personagem caminhando sozinho em uma rua escura durante a chuva.\n2. 5–10s: câmera acompanha o personagem; uma silhueta aparece ao fundo.\n3. 10–16s: personagem observa uma vitrine; seu reflexo mostra uma figura atrás dele.\n4. 16–22s: a figura desaparece e uma sombra começa a persegui-lo.\n5. 22–27s: o personagem para; seu reflexo começa a sorrir sozinho.\n6. 27–30s: uma mão sai do vidro, agarra o personagem e a tela corta para preto.",
+  "genre": "horror",
+  "themeSummary": "Suspense cinematográfico 2D com iluminação direcional controlada, prenúncio progressivo e fidelidade ao roteiro.",
+  "totalDuration": 30,
+  "engineUsed": "offline_rules",
+  "performanceProfile": "equilibrado",
+  "format": {
+    "aspectRatio": "16:9",
+    "previewResolution": "540p",
+    "exportResolution": "1080p",
+    "fps": 24,
+    "renderer": "ffmpeg_mp4"
+  },
+  "visualIdentity": {
+    "mood": "Suspense gótico nítido com contraste equilibrado e sombras direcionais",
+    "palette": [
+      "#0A0F1A",
+      "#1B2538",
+      "#2F3D54",
+      "#E5A032",
+      "#DC2626"
+    ],
+    "lightingStyle": "Chiaroscuro legível com luz pontual controlada, rim light fria e névoa de fundo",
+    "cameraLanguage": "Dolly contínuo, tracking suave, aproximação tensa sem câmeras mortas"
+  },
+  "characterBible": [
+    {
+      "id": "char_daniel_horror",
+      "name": "Daniel Vance",
+      "role": "Protagonista investigador",
+      "genre": "horror",
+      "description": "Homem de sobretudo escuro com lanterna, postura cautelosa e expressões intensas para suspense e terror.",
+      "kind": "rig2d",
+      "hairStyle": "short",
+      "outfitStyle": "coat",
+      "build": "average",
+      "palette": {
+        "skin": "#e0b394",
+        "skinShadow": "#b98364",
+        "hair": "#1f1b18",
+        "eyes": "#38bdf8",
+        "outfitPrimary": "#242c38",
+        "outfitSecondary": "#3b4759",
+        "pants": "#171c24",
+        "boots": "#0f1115",
+        "accent": "#f59e0b"
+      },
+      "accessory": {
+        "type": "flashlight",
+        "color": "#fde68a"
+      },
+      "defaultState": "walk",
+      "defaultExpression": "scared",
+      "availableStates": [
+        "idle",
+        "walk",
+        "run",
+        "sprint",
+        "jump",
+        "fall",
+        "attack",
+        "hit",
+        "death",
+        "talk",
+        "custom"
+      ],
+      "visualSheet": {
+        "sheetVersion": "1.0.0",
+        "signatureHash": "vs_696c5ad1",
+        "heightRatio": 1,
+        "headToBodyRatio": 0.18,
+        "shoulderWidthRatio": 1,
+        "lockedPalette": {
+          "skin": "#e0b394",
+          "skinShadow": "#b98364",
+          "hair": "#1f1b18",
+          "eyes": "#38bdf8",
+          "outfitPrimary": "#242c38",
+          "outfitSecondary": "#3b4759",
+          "pants": "#171c24",
+          "boots": "#0f1115",
+          "accent": "#f59e0b"
+        },
+        "lockedOutfitStyle": "coat",
+        "lockedHairStyle": "short",
+        "lockedAccessory": {
+          "type": "flashlight",
+          "color": "#fde68a"
+        },
+        "supportedCycles": [
+          "idle",
+          "walk",
+          "run",
+          "sprint",
+          "jump",
+          "fall",
+          "attack",
+          "hit",
+          "death",
+          "talk",
+          "custom"
+        ]
+      }
+    },
+    {
+      "id": "char_shadow_entity",
+      "name": "Vulto da Casa",
+      "role": "Entidade sombria antagonista",
+      "genre": "horror",
+      "description": "Figura alta e espectral envolta em penumbra controlada, olhos luminescentes e silhueta alongada.",
+      "kind": "rig2d",
+      "hairStyle": "hooded",
+      "outfitStyle": "spectral",
+      "build": "ethereal",
+      "palette": {
+        "skin": "#141720",
+        "skinShadow": "#07090d",
+        "hair": "#090b10",
+        "eyes": "#ef4444",
+        "outfitPrimary": "#0c0f16",
+        "outfitSecondary": "#1f2433",
+        "pants": "#07090d",
+        "boots": "#050608",
+        "accent": "#dc2626"
+      },
+      "accessory": {
+        "type": "shadow_aura",
+        "color": "#ef4444"
+      },
+      "defaultState": "idle",
+      "defaultExpression": "angry",
+      "availableStates": [
+        "idle",
+        "walk",
+        "run",
+        "sprint",
+        "jump",
+        "fall",
+        "attack",
+        "hit",
+        "death",
+        "talk",
+        "custom"
+      ],
+      "visualSheet": {
+        "sheetVersion": "1.0.0",
+        "signatureHash": "vs_78beead0",
+        "heightRatio": 1.12,
+        "headToBodyRatio": 0.16,
+        "shoulderWidthRatio": 1,
+        "lockedPalette": {
+          "skin": "#141720",
+          "skinShadow": "#07090d",
+          "hair": "#090b10",
+          "eyes": "#ef4444",
+          "outfitPrimary": "#0c0f16",
+          "outfitSecondary": "#1f2433",
+          "pants": "#07090d",
+          "boots": "#050608",
+          "accent": "#dc2626"
+        },
+        "lockedOutfitStyle": "spectral",
+        "lockedHairStyle": "hooded",
+        "lockedAccessory": {
+          "type": "shadow_aura",
+          "color": "#ef4444"
+        },
+        "supportedCycles": [
+          "idle",
+          "walk",
+          "run",
+          "sprint",
+          "jump",
+          "fall",
+          "attack",
+          "hit",
+          "death",
+          "talk",
+          "custom"
+        ]
+      }
+    }
+  ],
+  "scenarios": [
+    {
+      "id": "scene_dark_rain_street",
+      "name": "Rua Escura da Vitrine sob Chuva",
+      "genre": "horror",
+      "theme": "dark_rain_street",
+      "description": "Rua urbana noturna sob chuva fina com postes de luz quente, asfalto reflexivo e vitrine de vidro em primeiro/médio plano.",
+      "skyTop": "#060912",
+      "skyBottom": "#131c2e",
+      "groundColor": "#11151d",
+      "accentColor": "#e5a032",
+      "ambientTint": "#0e1726",
+      "layers": [
+        {
+          "id": "bg",
+          "name": "Silhuetas de prédios e céu chuvoso",
+          "depth": "background",
+          "parallaxFactor": 0.22,
+          "opacity": 1
+        },
+        {
+          "id": "mg",
+          "name": "Fachada urbana, poste e vitrine de vidro",
+          "depth": "midground",
+          "parallaxFactor": 0.58,
+          "opacity": 1
+        },
+        {
+          "id": "fg",
+          "name": "Postes próximos e gotas de chuva",
+          "depth": "foreground",
+          "parallaxFactor": 1.24,
+          "opacity": 0.9
+        }
+      ],
+      "props": [
+        {
+          "id": "p1",
+          "label": "Poste distante",
+          "kind": "lamp_post",
+          "x": 0.16,
+          "y": 0.54,
+          "scale": 0.85,
+          "depth": "background"
+        },
+        {
+          "id": "p2",
+          "label": "Vitrine noturna",
+          "kind": "storefront_vitrine",
+          "x": 0.68,
+          "y": 0.54,
+          "scale": 1.12,
+          "depth": "midground"
+        },
+        {
+          "id": "p3",
+          "label": "Poste lateral",
+          "kind": "lamp_post",
+          "x": 0.88,
+          "y": 0.54,
+          "scale": 1.06,
+          "depth": "foreground"
+        }
+      ]
+    }
+  ],
+  "script": [
+    {
+      "sceneIndex": 0,
+      "heading": "CENA 1 — PERSONAGEM CAMINHANDO SOZINHO EM UMA RUA",
+      "action": "Personagem caminhando sozinho em uma rua escura durante a chuva. (Daniel Vance em Rua Escura da Vitrine sob Chuva).",
+      "dialogue": "(Sem narração — narrativa visual e sonora)",
+      "soundCue": "Chuva e vento noturno (wind), Passos sob a chuva (heartbeat)"
+    },
+    {
+      "sceneIndex": 1,
+      "heading": "CENA 2 — CÂMERA ACOMPANHA O PERSONAGEM; UMA SILHUETA",
+      "action": "Câmera acompanha o personagem; uma silhueta aparece ao fundo. (Daniel Vance em Rua Escura da Vitrine sob Chuva).",
+      "dialogue": "(Sem narração — narrativa visual e sonora)",
+      "soundCue": "Chuva e vento na rua (wind), Sensação de vigilância (heartbeat), Silhueta ao fundo (riser)"
+    },
+    {
+      "sceneIndex": 2,
+      "heading": "CENA 3 — PERSONAGEM OBSERVA UMA VITRINE; SEU REFLEXO",
+      "action": "Personagem observa uma vitrine; seu reflexo mostra uma figura atrás dele. (Daniel Vance em Rua Escura da Vitrine sob Chuva).",
+      "dialogue": "(Sem narração — narrativa visual e sonora)",
+      "soundCue": "Chuva contra a vitrine (wind), Presença no reflexo (riser), Figura revelada atrás dele (sting)"
+    },
+    {
+      "sceneIndex": 3,
+      "heading": "CENA 4 — A FIGURA DESAPARECE E UMA SOMBRA",
+      "action": "A figura desaparece e uma sombra começa a persegui-lo. (Daniel Vance em Rua Escura da Vitrine sob Chuva).",
+      "dialogue": "(Sem narração — narrativa visual e sonora)",
+      "soundCue": "Desaparecimento e arranque (whoosh), Pulso na perseguição (heartbeat), Sombra avança em perseguição (boom)"
+    },
+    {
+      "sceneIndex": 4,
+      "heading": "CENA 5 — O PERSONAGEM PARA; SEU REFLEXO COMEÇA",
+      "action": "O personagem para; seu reflexo começa a sorrir sozinho. (Daniel Vance em Rua Escura da Vitrine sob Chuva).",
+      "dialogue": "(Sem narração — narrativa visual e sonora)",
+      "soundCue": "Batimento tenso diante da vitrine (heartbeat), Estalo sutil no vidro (creak), Tensão do sorriso autônomo (riser)"
+    },
+    {
+      "sceneIndex": 5,
+      "heading": "CENA 6 — UMA MÃO SAI DO VIDRO, AGARRA",
+      "action": "Uma mão sai do vidro, agarra o personagem e a tela corta para preto. (Daniel Vance em Rua Escura da Vitrine sob Chuva).",
+      "dialogue": "(Sem narração — narrativa visual e sonora)",
+      "soundCue": "Vidro estilhaçando (impact), Mão agarra o personagem (sting), Corte seco para preto (boom)"
+    }
+  ],
+  "scenes": [
+    {
+      "id": "scene_1_zq3s",
+      "index": 0,
+      "title": "Personagem caminhando sozinho em uma rua",
+      "summary": "Personagem caminhando sozinho em uma rua escura durante a chuva. (Daniel Vance em Rua Escura da Vitrine sob Chuva).",
+      "sourceBeat": "personagem caminhando sozinho em uma rua escura durante a chuva.",
+      "expectedKeywords": [
+        "personagem",
+        "caminhando",
+        "sozinho",
+        "escura",
+        "durante"
+      ],
+      "narrativeIntent": "abertura",
+      "duration": 5,
+      "scenarioId": "scene_dark_rain_street",
+      "framing": "wide",
+      "cameraMove": "dolly_in",
+      "secondaryCameraMove": "tracking",
+      "cameraIntensity": 0.58,
+      "transitionIn": "fade_black",
+      "endingImpact": "none",
+      "reflectionMode": "mirror",
+      "lighting": {
+        "ambientIntensity": 0.42,
+        "ambientColor": "#101828",
+        "directionalAngle": 28,
+        "directionalIntensity": 0.32,
+        "directionalColor": "#7dd3fc",
+        "pointLightEnabled": true,
+        "pointLightX": 0.45,
+        "pointLightY": 0.45,
+        "pointLightRadius": 0.36,
+        "pointLightColor": "#fef08a",
+        "pointLightFlicker": 0.08,
+        "rimLightIntensity": 0.48,
+        "rimLightColor": "#60a5fa",
+        "shadowsEnabled": true,
+        "shadowIntensity": 0.7,
+        "volumetricIntensity": 0.18,
+        "glowIntensity": 0.12,
+        "bloomIntensity": 0.12
+      },
+      "effects": {
+        "fog": 0.16,
+        "dust": 0.34,
+        "rain": 0.46,
+        "snow": 0,
+        "smoke": 0.06,
+        "fire": 0,
+        "sparks": 0,
+        "vignette": 0.44,
+        "filmGrain": 0.16,
+        "chromaticAberration": 0,
+        "scanlines": 0,
+        "glitch": 0,
+        "cameraShake": 0.03,
+        "motionBlur": 0
+      },
+      "actors": [
+        {
+          "id": "actor_main_0",
+          "characterId": "char_daniel_horror",
+          "x": 0.18,
+          "y": 0.77,
+          "targetX": 0.44,
+          "targetY": 0.77,
+          "scale": 1,
+          "opacity": 1,
+          "flipX": false,
+          "rotation": 0,
+          "state": "walk",
+          "nextState": "walk",
+          "stateTransitionRatio": 0.56,
+          "actionPhases": [
+            {
+              "atProgress": 0,
+              "state": "walk",
+              "expression": "neutral",
+              "lookDirection": "forward"
+            },
+            {
+              "atProgress": 0.45,
+              "state": "walk",
+              "expression": "determined",
+              "lookDirection": "scan"
+            },
+            {
+              "atProgress": 0.82,
+              "state": "walk",
+              "expression": "surprised",
+              "lookDirection": "scan"
+            }
+          ],
+          "lookDirection": "scan",
+          "revealMode": "visible",
+          "expression": "neutral",
+          "easing": "ease_in_out",
+          "dialogue": ""
+        }
+      ],
+      "sfxEvents": [
+        {
+          "id": "sfx_qqsnn1s",
+          "sfx": "wind",
+          "offsetSec": 0.25,
+          "volume": 0.48,
+          "label": "Chuva e vento noturno"
+        },
+        {
+          "id": "sfx_8lnkx8k",
+          "sfx": "heartbeat",
+          "offsetSec": 1.85,
+          "volume": 0.45,
+          "label": "Passos sob a chuva"
+        }
+      ],
+      "captionText": "",
+      "visualPrompt": "Personagem caminhando sozinho em uma rua — personagem caminhando sozinho em uma rua escura durante a chuva. (wide, dolly_in)",
+      "colorPalette": [
+        "#0A0F1A",
+        "#1B2538",
+        "#2F3D54",
+        "#E5A032",
+        "#DC2626"
+      ]
+    },
+    {
+      "id": "scene_2_kj7d",
+      "index": 1,
+      "title": "Câmera acompanha o personagem; uma silhueta",
+      "summary": "Câmera acompanha o personagem; uma silhueta aparece ao fundo. (Daniel Vance em Rua Escura da Vitrine sob Chuva).",
+      "sourceBeat": "câmera acompanha o personagem; uma silhueta aparece ao fundo.",
+      "expectedKeywords": [
+        "camera",
+        "acompanha",
+        "personagem",
+        "silhueta",
+        "aparece"
+      ],
+      "narrativeIntent": "tensao",
+      "duration": 5,
+      "scenarioId": "scene_dark_rain_street",
+      "framing": "medium",
+      "cameraMove": "tracking",
+      "secondaryCameraMove": "dolly_in",
+      "cameraIntensity": 0.58,
+      "transitionIn": "crossfade",
+      "endingImpact": "none",
+      "reflectionMode": "mirror",
+      "lighting": {
+        "ambientIntensity": 0.42,
+        "ambientColor": "#101828",
+        "directionalAngle": 28,
+        "directionalIntensity": 0.32,
+        "directionalColor": "#7dd3fc",
+        "pointLightEnabled": true,
+        "pointLightX": 0.45,
+        "pointLightY": 0.45,
+        "pointLightRadius": 0.36,
+        "pointLightColor": "#fef08a",
+        "pointLightFlicker": 0.08,
+        "rimLightIntensity": 0.48,
+        "rimLightColor": "#60a5fa",
+        "shadowsEnabled": true,
+        "shadowIntensity": 0.7,
+        "volumetricIntensity": 0.18,
+        "glowIntensity": 0.12,
+        "bloomIntensity": 0.12
+      },
+      "effects": {
+        "fog": 0.16,
+        "dust": 0.34,
+        "rain": 0.46,
+        "snow": 0,
+        "smoke": 0.06,
+        "fire": 0,
+        "sparks": 0,
+        "vignette": 0.44,
+        "filmGrain": 0.16,
+        "chromaticAberration": 0,
+        "scanlines": 0,
+        "glitch": 0,
+        "cameraShake": 0.08,
+        "motionBlur": 0
+      },
+      "actors": [
+        {
+          "id": "actor_main_1",
+          "characterId": "char_daniel_horror",
+          "x": 0.44,
+          "y": 0.77,
+          "targetX": 0.6,
+          "targetY": 0.77,
+          "scale": 1,
+          "opacity": 1,
+          "flipX": false,
+          "rotation": 0,
+          "state": "walk",
+          "nextState": "walk",
+          "stateTransitionRatio": 0.56,
+          "actionPhases": [
+            {
+              "atProgress": 0,
+              "state": "walk",
+              "expression": "neutral",
+              "lookDirection": "forward"
+            },
+            {
+              "atProgress": 0.48,
+              "state": "walk",
+              "expression": "surprised",
+              "lookDirection": "scan"
+            },
+            {
+              "atProgress": 0.78,
+              "state": "walk",
+              "expression": "scared",
+              "lookDirection": "back"
+            }
+          ],
+          "lookDirection": "forward",
+          "revealMode": "visible",
+          "expression": "determined",
+          "easing": "ease_in_out",
+          "dialogue": ""
+        },
+        {
+          "id": "actor_silhouette_1",
+          "characterId": "char_shadow_entity",
+          "x": 0.14,
+          "y": 0.7,
+          "targetX": 0.24,
+          "targetY": 0.71,
+          "scale": 0.74,
+          "opacity": 0.72,
+          "flipX": false,
+          "rotation": 0,
+          "state": "idle",
+          "nextState": "walk",
+          "stateTransitionRatio": 0.52,
+          "actionPhases": [
+            {
+              "atProgress": 0.15,
+              "state": "idle",
+              "expression": "angry",
+              "lookDirection": "forward"
+            },
+            {
+              "atProgress": 0.55,
+              "state": "walk",
+              "expression": "angry",
+              "lookDirection": "forward"
+            }
+          ],
+          "revealMode": "foreshadow",
+          "enterProgress": 0.16,
+          "exitProgress": 0.96,
+          "expression": "angry",
+          "easing": "ease_in_out",
+          "isShadowEntity": true
+        }
+      ],
+      "sfxEvents": [
+        {
+          "id": "sfx_nygeb34",
+          "sfx": "wind",
+          "offsetSec": 0.2,
+          "volume": 0.44,
+          "label": "Chuva e vento na rua"
+        },
+        {
+          "id": "sfx_ohewms5",
+          "sfx": "heartbeat",
+          "offsetSec": 1.5,
+          "volume": 0.62,
+          "label": "Sensação de vigilância"
+        },
+        {
+          "id": "sfx_gygd7sg",
+          "sfx": "riser",
+          "offsetSec": 2.8,
+          "volume": 0.65,
+          "label": "Silhueta ao fundo"
+        }
+      ],
+      "captionText": "",
+      "visualPrompt": "Câmera acompanha o personagem; uma silhueta — câmera acompanha o personagem; uma silhueta aparece ao fundo. (medium, tracking)",
+      "colorPalette": [
+        "#0A0F1A",
+        "#1B2538",
+        "#2F3D54",
+        "#E5A032",
+        "#DC2626"
+      ]
+    },
+    {
+      "id": "scene_3_gifx",
+      "index": 2,
+      "title": "Personagem observa uma vitrine; seu reflexo",
+      "summary": "Personagem observa uma vitrine; seu reflexo mostra uma figura atrás dele. (Daniel Vance em Rua Escura da Vitrine sob Chuva).",
+      "sourceBeat": "personagem observa uma vitrine; seu reflexo mostra uma figura atrás dele.",
+      "expectedKeywords": [
+        "personagem",
+        "observa",
+        "vitrine",
+        "reflexo",
+        "mostra"
+      ],
+      "narrativeIntent": "desenvolvimento",
+      "duration": 6,
+      "scenarioId": "scene_dark_rain_street",
+      "framing": "over_shoulder",
+      "cameraMove": "dolly_in",
+      "secondaryCameraMove": "handheld",
+      "cameraIntensity": 0.58,
+      "transitionIn": "crossfade",
+      "endingImpact": "none",
+      "reflectionMode": "figure_behind",
+      "lighting": {
+        "ambientIntensity": 0.42,
+        "ambientColor": "#101828",
+        "directionalAngle": 28,
+        "directionalIntensity": 0.32,
+        "directionalColor": "#7dd3fc",
+        "pointLightEnabled": true,
+        "pointLightX": 0.45,
+        "pointLightY": 0.45,
+        "pointLightRadius": 0.36,
+        "pointLightColor": "#fef08a",
+        "pointLightFlicker": 0.08,
+        "rimLightIntensity": 0.48,
+        "rimLightColor": "#60a5fa",
+        "shadowsEnabled": true,
+        "shadowIntensity": 0.7,
+        "volumetricIntensity": 0.18,
+        "glowIntensity": 0.12,
+        "bloomIntensity": 0.12
+      },
+      "effects": {
+        "fog": 0.16,
+        "dust": 0.34,
+        "rain": 0.46,
+        "snow": 0,
+        "smoke": 0.06,
+        "fire": 0,
+        "sparks": 0,
+        "vignette": 0.44,
+        "filmGrain": 0.16,
+        "chromaticAberration": 0,
+        "scanlines": 0,
+        "glitch": 0,
+        "cameraShake": 0.03,
+        "motionBlur": 0
+      },
+      "actors": [
+        {
+          "id": "actor_main_2",
+          "characterId": "char_daniel_horror",
+          "x": 0.48,
+          "y": 0.77,
+          "targetX": 0.4,
+          "targetY": 0.77,
+          "scale": 1,
+          "opacity": 1,
+          "flipX": false,
+          "rotation": 0,
+          "state": "walk",
+          "nextState": "idle",
+          "stateTransitionRatio": 0.56,
+          "actionPhases": [
+            {
+              "atProgress": 0,
+              "state": "walk",
+              "expression": "neutral",
+              "lookDirection": "forward"
+            },
+            {
+              "atProgress": 0.28,
+              "state": "idle",
+              "expression": "neutral",
+              "lookDirection": "forward"
+            },
+            {
+              "atProgress": 0.58,
+              "state": "idle",
+              "expression": "surprised",
+              "lookDirection": "forward"
+            },
+            {
+              "atProgress": 0.82,
+              "state": "idle",
+              "expression": "scared",
+              "lookDirection": "back"
+            }
+          ],
+          "lookDirection": "forward",
+          "revealMode": "visible",
+          "expression": "surprised",
+          "easing": "ease_in_out",
+          "dialogue": ""
+        }
+      ],
+      "sfxEvents": [
+        {
+          "id": "sfx_86flyt1",
+          "sfx": "wind",
+          "offsetSec": 0.2,
+          "volume": 0.42,
+          "label": "Chuva contra a vitrine"
+        },
+        {
+          "id": "sfx_8k68yqe",
+          "sfx": "riser",
+          "offsetSec": 1.6,
+          "volume": 0.72,
+          "label": "Presença no reflexo"
+        },
+        {
+          "id": "sfx_93vx4we",
+          "sfx": "sting",
+          "offsetSec": 3.6,
+          "volume": 0.86,
+          "label": "Figura revelada atrás dele"
+        }
+      ],
+      "captionText": "",
+      "visualPrompt": "Personagem observa uma vitrine; seu reflexo — personagem observa uma vitrine; seu reflexo mostra uma figura atrás dele. (over_shoulder, dolly_in)",
+      "colorPalette": [
+        "#0A0F1A",
+        "#1B2538",
+        "#2F3D54",
+        "#E5A032",
+        "#DC2626"
+      ]
+    },
+    {
+      "id": "scene_4_9d9w",
+      "index": 3,
+      "title": "A figura desaparece e uma sombra",
+      "summary": "A figura desaparece e uma sombra começa a persegui-lo. (Daniel Vance em Rua Escura da Vitrine sob Chuva).",
+      "sourceBeat": "a figura desaparece e uma sombra começa a persegui-lo.",
+      "expectedKeywords": [
+        "figura",
+        "desaparece",
+        "sombra",
+        "comeca",
+        "persegui"
+      ],
+      "narrativeIntent": "climax",
+      "duration": 6,
+      "scenarioId": "scene_dark_rain_street",
+      "framing": "low_angle",
+      "cameraMove": "tracking",
+      "secondaryCameraMove": "handheld",
+      "cameraIntensity": 0.78,
+      "transitionIn": "crossfade",
+      "endingImpact": "none",
+      "reflectionMode": "mirror",
+      "lighting": {
+        "ambientIntensity": 0.36,
+        "ambientColor": "#101828",
+        "directionalAngle": 42,
+        "directionalIntensity": 0.36,
+        "directionalColor": "#7dd3fc",
+        "pointLightEnabled": true,
+        "pointLightX": 0.45,
+        "pointLightY": 0.45,
+        "pointLightRadius": 0.36,
+        "pointLightColor": "#fde68a",
+        "pointLightFlicker": 0.16,
+        "rimLightIntensity": 0.62,
+        "rimLightColor": "#f87171",
+        "shadowsEnabled": true,
+        "shadowIntensity": 0.7,
+        "volumetricIntensity": 0.18,
+        "glowIntensity": 0.12,
+        "bloomIntensity": 0.12
+      },
+      "effects": {
+        "fog": 0.2,
+        "dust": 0.34,
+        "rain": 0.52,
+        "snow": 0,
+        "smoke": 0.1,
+        "fire": 0,
+        "sparks": 0,
+        "vignette": 0.56,
+        "filmGrain": 0.16,
+        "chromaticAberration": 0,
+        "scanlines": 0,
+        "glitch": 0,
+        "cameraShake": 0.22,
+        "motionBlur": 0
+      },
+      "actors": [
+        {
+          "id": "actor_main_3",
+          "characterId": "char_daniel_horror",
+          "x": 0.4,
+          "y": 0.77,
+          "targetX": 0.76,
+          "targetY": 0.77,
+          "scale": 1,
+          "opacity": 1,
+          "flipX": false,
+          "rotation": 0,
+          "state": "run",
+          "nextState": "sprint",
+          "stateTransitionRatio": 0.56,
+          "actionPhases": [
+            {
+              "atProgress": 0,
+              "state": "idle",
+              "expression": "surprised",
+              "lookDirection": "back"
+            },
+            {
+              "atProgress": 0.16,
+              "state": "run",
+              "expression": "scared",
+              "lookDirection": "forward"
+            },
+            {
+              "atProgress": 0.52,
+              "state": "sprint",
+              "expression": "scared",
+              "lookDirection": "back"
+            },
+            {
+              "atProgress": 0.82,
+              "state": "sprint",
+              "expression": "scared",
+              "lookDirection": "forward"
+            }
+          ],
+          "lookDirection": "back",
+          "revealMode": "visible",
+          "expression": "scared",
+          "easing": "ease_in_out",
+          "dialogue": ""
+        },
+        {
+          "id": "actor_pursuer_3",
+          "characterId": "char_shadow_entity",
+          "x": 0.16000000000000003,
+          "y": 0.75,
+          "targetX": 0.5800000000000001,
+          "targetY": 0.76,
+          "scale": 1.1,
+          "opacity": 0.94,
+          "flipX": false,
+          "rotation": 0,
+          "state": "run",
+          "nextState": "sprint",
+          "stateTransitionRatio": 0.45,
+          "actionPhases": [
+            {
+              "atProgress": 0.08,
+              "state": "walk",
+              "expression": "angry",
+              "lookDirection": "forward"
+            },
+            {
+              "atProgress": 0.28,
+              "state": "run",
+              "expression": "angry",
+              "lookDirection": "forward"
+            },
+            {
+              "atProgress": 0.62,
+              "state": "sprint",
+              "expression": "angry",
+              "lookDirection": "forward"
+            }
+          ],
+          "revealMode": "emerge",
+          "enterProgress": 0.08,
+          "expression": "angry",
+          "easing": "ease_out",
+          "isShadowEntity": true
+        }
+      ],
+      "sfxEvents": [
+        {
+          "id": "sfx_eqfcr7i",
+          "sfx": "whoosh",
+          "offsetSec": 0.45,
+          "volume": 0.82,
+          "label": "Desaparecimento e arranque"
+        },
+        {
+          "id": "sfx_0sr49jo",
+          "sfx": "heartbeat",
+          "offsetSec": 1.4,
+          "volume": 0.78,
+          "label": "Pulso na perseguição"
+        },
+        {
+          "id": "sfx_hu7cqrq",
+          "sfx": "boom",
+          "offsetSec": 3.2,
+          "volume": 0.86,
+          "label": "Sombra avança em perseguição"
+        }
+      ],
+      "captionText": "",
+      "visualPrompt": "A figura desaparece e uma sombra — a figura desaparece e uma sombra começa a persegui-lo. (low_angle, tracking)",
+      "colorPalette": [
+        "#0A0F1A",
+        "#1B2538",
+        "#2F3D54",
+        "#E5A032",
+        "#DC2626"
+      ]
+    },
+    {
+      "id": "scene_5_hyt4",
+      "index": 4,
+      "title": "O personagem para; seu reflexo começa",
+      "summary": "O personagem para; seu reflexo começa a sorrir sozinho. (Daniel Vance em Rua Escura da Vitrine sob Chuva).",
+      "sourceBeat": "o personagem para; seu reflexo começa a sorrir sozinho.",
+      "expectedKeywords": [
+        "personagem",
+        "reflexo",
+        "comeca",
+        "sorrir",
+        "sozinho"
+      ],
+      "narrativeIntent": "climax",
+      "duration": 5,
+      "scenarioId": "scene_dark_rain_street",
+      "framing": "close_up",
+      "cameraMove": "dolly_in",
+      "secondaryCameraMove": "dutch_angle",
+      "cameraIntensity": 0.78,
+      "transitionIn": "crossfade",
+      "endingImpact": "none",
+      "reflectionMode": "autonomous_smile",
+      "lighting": {
+        "ambientIntensity": 0.36,
+        "ambientColor": "#101828",
+        "directionalAngle": 42,
+        "directionalIntensity": 0.36,
+        "directionalColor": "#7dd3fc",
+        "pointLightEnabled": true,
+        "pointLightX": 0.45,
+        "pointLightY": 0.45,
+        "pointLightRadius": 0.36,
+        "pointLightColor": "#fde68a",
+        "pointLightFlicker": 0.16,
+        "rimLightIntensity": 0.62,
+        "rimLightColor": "#f87171",
+        "shadowsEnabled": true,
+        "shadowIntensity": 0.7,
+        "volumetricIntensity": 0.18,
+        "glowIntensity": 0.12,
+        "bloomIntensity": 0.12
+      },
+      "effects": {
+        "fog": 0.2,
+        "dust": 0.34,
+        "rain": 0.46,
+        "snow": 0,
+        "smoke": 0.1,
+        "fire": 0,
+        "sparks": 0,
+        "vignette": 0.56,
+        "filmGrain": 0.16,
+        "chromaticAberration": 0,
+        "scanlines": 0,
+        "glitch": 0,
+        "cameraShake": 0.22,
+        "motionBlur": 0
+      },
+      "actors": [
+        {
+          "id": "actor_main_4",
+          "characterId": "char_daniel_horror",
+          "x": 0.48,
+          "y": 0.77,
+          "targetX": 0.4,
+          "targetY": 0.77,
+          "scale": 1.12,
+          "opacity": 1,
+          "flipX": false,
+          "rotation": 0,
+          "state": "walk",
+          "nextState": "idle",
+          "stateTransitionRatio": 0.56,
+          "actionPhases": [
+            {
+              "atProgress": 0,
+              "state": "walk",
+              "expression": "surprised",
+              "lookDirection": "forward"
+            },
+            {
+              "atProgress": 0.22,
+              "state": "idle",
+              "expression": "surprised",
+              "lookDirection": "forward"
+            },
+            {
+              "atProgress": 0.52,
+              "state": "idle",
+              "expression": "scared",
+              "lookDirection": "forward"
+            },
+            {
+              "atProgress": 0.8,
+              "state": "idle",
+              "expression": "scared",
+              "lookDirection": "scan"
+            }
+          ],
+          "lookDirection": "forward",
+          "revealMode": "visible",
+          "expression": "scared",
+          "easing": "ease_in_out",
+          "dialogue": ""
+        }
+      ],
+      "sfxEvents": [
+        {
+          "id": "sfx_bxc0ems",
+          "sfx": "heartbeat",
+          "offsetSec": 0.45,
+          "volume": 0.72,
+          "label": "Batimento tenso diante da vitrine"
+        },
+        {
+          "id": "sfx_srwisf7",
+          "sfx": "creak",
+          "offsetSec": 1.7,
+          "volume": 0.55,
+          "label": "Estalo sutil no vidro"
+        },
+        {
+          "id": "sfx_n8f028e",
+          "sfx": "riser",
+          "offsetSec": 2.4,
+          "volume": 0.82,
+          "label": "Tensão do sorriso autônomo"
+        }
+      ],
+      "captionText": "",
+      "visualPrompt": "O personagem para; seu reflexo começa — o personagem para; seu reflexo começa a sorrir sozinho. (close_up, dolly_in)",
+      "colorPalette": [
+        "#0A0F1A",
+        "#1B2538",
+        "#2F3D54",
+        "#E5A032",
+        "#DC2626"
+      ]
+    },
+    {
+      "id": "scene_6_bv5k",
+      "index": 5,
+      "title": "Uma mão sai do vidro, agarra",
+      "summary": "Uma mão sai do vidro, agarra o personagem e a tela corta para preto. (Daniel Vance em Rua Escura da Vitrine sob Chuva).",
+      "sourceBeat": "uma mão sai do vidro, agarra o personagem e a tela corta para preto.",
+      "expectedKeywords": [
+        "vidro",
+        "agarra",
+        "personagem",
+        "tela",
+        "corta"
+      ],
+      "narrativeIntent": "encerramento",
+      "duration": 3,
+      "scenarioId": "scene_dark_rain_street",
+      "framing": "medium",
+      "cameraMove": "zoom",
+      "secondaryCameraMove": "dutch_angle",
+      "cameraIntensity": 0.72,
+      "transitionIn": "crossfade",
+      "endingImpact": "cut_to_black",
+      "reflectionMode": "hand_grab",
+      "lighting": {
+        "ambientIntensity": 0.32,
+        "ambientColor": "#101828",
+        "directionalAngle": 28,
+        "directionalIntensity": 0.32,
+        "directionalColor": "#7dd3fc",
+        "pointLightEnabled": true,
+        "pointLightX": 0.45,
+        "pointLightY": 0.45,
+        "pointLightRadius": 0.36,
+        "pointLightColor": "#fef08a",
+        "pointLightFlicker": 0.08,
+        "rimLightIntensity": 0.48,
+        "rimLightColor": "#f87171",
+        "shadowsEnabled": true,
+        "shadowIntensity": 0.7,
+        "volumetricIntensity": 0.18,
+        "glowIntensity": 0.12,
+        "bloomIntensity": 0.12
+      },
+      "effects": {
+        "fog": 0.16,
+        "dust": 0.34,
+        "rain": 0.42,
+        "snow": 0,
+        "smoke": 0.06,
+        "fire": 0,
+        "sparks": 0,
+        "vignette": 0.44,
+        "filmGrain": 0.16,
+        "chromaticAberration": 0,
+        "scanlines": 0,
+        "glitch": 0,
+        "cameraShake": 0.26,
+        "motionBlur": 0
+      },
+      "actors": [
+        {
+          "id": "actor_main_5",
+          "characterId": "char_daniel_horror",
+          "x": 0.4,
+          "y": 0.77,
+          "targetX": 0.48000000000000004,
+          "targetY": 0.77,
+          "scale": 1,
+          "opacity": 1,
+          "flipX": false,
+          "rotation": 0,
+          "state": "idle",
+          "nextState": "hit",
+          "stateTransitionRatio": 0.56,
+          "actionPhases": [
+            {
+              "atProgress": 0,
+              "state": "idle",
+              "expression": "surprised",
+              "lookDirection": "forward"
+            },
+            {
+              "atProgress": 0.24,
+              "state": "hit",
+              "expression": "scared",
+              "lookDirection": "forward"
+            },
+            {
+              "atProgress": 0.56,
+              "state": "hit",
+              "expression": "scared",
+              "lookDirection": "forward"
+            }
+          ],
+          "lookDirection": "forward",
+          "revealMode": "visible",
+          "expression": "scared",
+          "easing": "ease_in_out",
+          "dialogue": ""
+        }
+      ],
+      "sfxEvents": [
+        {
+          "id": "sfx_czflavx",
+          "sfx": "impact",
+          "offsetSec": 0.42,
+          "volume": 0.94,
+          "label": "Vidro estilhaçando"
+        },
+        {
+          "id": "sfx_vu261sm",
+          "sfx": "sting",
+          "offsetSec": 0.95,
+          "volume": 0.95,
+          "label": "Mão agarra o personagem"
+        },
+        {
+          "id": "sfx_ytut1y1",
+          "sfx": "boom",
+          "offsetSec": 2.45,
+          "volume": 0.92,
+          "label": "Corte seco para preto"
+        }
+      ],
+      "captionText": "",
+      "visualPrompt": "Uma mão sai do vidro, agarra — uma mão sai do vidro, agarra o personagem e a tela corta para preto. (medium, zoom)",
+      "colorPalette": [
+        "#0A0F1A",
+        "#1B2538",
+        "#2F3D54",
+        "#E5A032",
+        "#DC2626"
+      ]
+    }
+  ],
+  "audio": {
+    "musicStyle": "horror_drone",
+    "musicVolume": 0.48,
+    "sfxVolume": 0.85,
+    "voiceVolume": 0,
+    "fadeInSec": 1.2,
+    "fadeOutSec": 1.8,
+    "duckingAmount": 0.42,
+    "normalize": true,
+    "narrationMode": "none"
+  },
+  "captions": {
+    "enabled": false,
+    "preset": "noir_minimal",
+    "fontSize": 34,
+    "positionY": 0.84,
+    "safeAreaMargin": 0.08,
+    "highlightColor": "#E5A032",
+    "textColor": "#F8FAFC",
+    "outlineWidth": 4,
+    "shadowBlur": 10,
+    "enterAnimation": "pop",
+    "exitAnimation": "fade"
+  },
+  "createdAt": "2026-11-20T16:43:29.400Z",
+  "updatedAt": "2026-11-20T16:43:29.400Z"
+}

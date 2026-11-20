@@ -1,0 +1,6 @@
+{
+  "name": "AI 2D Video Studio",
+  "description": "Estúdio independente de criação automática de vídeos animados 2D a partir de texto, com personagens articulados, spritesheets PNG, direção cinematográfica, áudio procedural, legendas ASS/SRT, QA e pacote desktop Python/PySide6 exportável.",
+  "requestFramePermissions": [],
+  "majorCapabilities": []
+}
